@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(65, 153, 165);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+.menu-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.logo{
+    width: 8rem;
+}
+.section{
+    background-image: url(../img/fotoCarpinteria.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+    display: flex;
+    padding: 3rem;
+    gap: 2rem;
+    align-items: center;
+}
+.section-left{
+
+}
+.section-title{
+
+}
+.section-text{
+
+}
+.section-button{
+
+}
