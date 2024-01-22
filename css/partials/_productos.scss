@@ -1,0 +1,61 @@
+/* Cards de productos */
+
+.card {
+    background-color: $colorfooter;
+    width: 100%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    border: 3px solid $colornegro;
+    box-shadow: 0 7px 8px 0px $colorsombra;
+    transition: 0.2s;
+    gap: 1rem;
+
+    .main-product {
+        background-color: $colorverde2;
+        padding: 3rem;
+    
+    }
+    
+    .main-tit {
+        background-color: $colorverde1;
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    /* quienSoy */
+    .contenedor3 {
+        background-color: $colorverde1;
+    }
+    
+    .contenedor3-junior-titulo {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 6rem;
+        background-size: 4rem;
+    
+    }
+    
+    .contenedor3-junior-titulo-img-p {
+        background-color: $colorverde1;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .imagen-D {
+        width: 100%;
+        border: 2px solid $colorblanco;
+        border-radius: 1rem;
+        box-shadow: 0px 15px 25px $colorsombra;
+    }
+    
+    .parraf {
+        background-color: $colorverde2;
+        font-size: 2rem;
+        border: 2px solid $colornegro;
+        border-radius: 1rem;
+        box-shadow: 0px 15px 25px $colorsombra;
+    }
+    
+}

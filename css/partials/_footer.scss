@@ -1,0 +1,125 @@
+/*------------------------------------------------------- footer---------------------------------------------------------------- */
+footer {
+    width: 100%;
+    padding: 10px 0px;
+    background-size: cover;
+    background-color: $colorfooter;
+
+    .contenedorf {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .box__f {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        text-decoration: none;
+
+        & hover{
+            text-decoration: dashed;
+        }
+    }
+    
+    .box__f .logo img {
+        width: 100px;
+    }
+    
+    .box__f .termino {
+        max-width: 350px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: $colornegro;
+        font-size: 18px;
+    }
+    
+    .box__f h4 {
+        margin-bottom: 30px;
+        color: $colornegro;
+        font-weight: 700;
+    }
+    
+    .box__f a {
+        margin-top: 10px;
+        color: $colornegro;
+        font-weight: 600;
+    }
+    
+    .box__f a:hover {
+        opacity: 0.8;
+    }
+    
+    .box__f a .fab {
+        font-size: 20px;
+    }
+    
+    .box__f a .facebook:hover {
+        background: $colorface;
+    }
+    
+    .derechodeautor {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0pc 40px;
+    }
+    
+    .derechodeautor p {
+        margin-top: 20px;
+        color: $colornegro;
+    }
+    
+    .derechodeautor hr {
+        border: none;
+        height: 1px;
+        background-color: $colornegro;
+    }
+    
+    .box__f .redS ul li a {
+        display: block;
+        padding: 0 10px;
+        background: $colornegro;
+        color: $colorblanco;
+        line-height: 50px;
+        font-size: 18px;
+        box-shadow:  $colorsombra;
+        transition: 0.2s;
+    }
+    
+    .redS ul li {
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .redS ul:hover a {
+        filter: blur(2px);
+    }
+    
+    .redS ul li a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px $colorsombra;
+        filter: none;
+    }
+    
+    .redS ul li .Facebook:hover {
+        background:$colorface;
+    }
+    
+    .redS ul li .Instagram:hover {
+        background: $colorinsta;
+    }
+    
+    .redS ul li .Twitter:hover {
+        background:$colortwiter;
+    }
+    
+    .redS ul li .WhatSapp:hover {
+        background: $colorwhatsap;
+    }
+}
+
