@@ -1,16 +1,16 @@
-header {
+
+ header {
     background-color: $colornegro;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
 
-    @media(max-widht: 688px) {
+    @media (max-width: 688px) {
         header {
             display: flex;
             flex-direction: column;
         }
-
     }
 
     .menu {
@@ -20,23 +20,31 @@ header {
 
     .menu-item {
         text-decoration: none;
-        color:$colorblanco;
+        color: $colorblanco;
         font-size: 1.5rem;
+        background-color: $colornegro;
+        padding: 10px;
+        transition: box-shadow 0.3s, transform 0.3s;
+
+        &:hover {
+            box-shadow: 0 0 20px rgb(243, 241, 241);
+            transform: translateY(-5px);
+            color: #9c7500;
+            background: $colorverde1;
+        }
     }
 
     .logo-nav {
-
         width: 8rem;
         border-radius: 1rem;
         box-shadow: 0px 15px 25px $colorblanco;
     }
 
-    @media(max-width:1000px) {
+    @media (max-width: 1000px) {
         .menu {
             display: flex;
             flex-direction: column;
-            font-size: 10rem;
+            font-size: 1rem; 
         }
     }
-
-}
+} 
