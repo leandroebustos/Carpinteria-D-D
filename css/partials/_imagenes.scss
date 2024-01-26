@@ -38,8 +38,9 @@
         transition: 0.2s;
     }
     
-    @media (max-width) {
+    @media (max-width: 1300px) {
         .grid {
+            height: 200vh;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-columns: repeat(auto-fit,

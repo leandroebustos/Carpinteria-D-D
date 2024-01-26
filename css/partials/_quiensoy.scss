@@ -1,0 +1,48 @@
+.contenedor3{
+    background-image: url(..//../img/Bosque.jpg);
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.contenedor3-junior-titulo {
+    color: #155731;
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+
+}
+.contenedor3-junior-titulo-img-p {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    text-shadow: 6px 8px 10px rgba(0, 0, 0, 0.5);
+    
+} 
+
+.imagen-D {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #070707;
+    transition: transform 0.3s ease;
+
+    .imagen-D:hover {
+        transform: scale(1.1); /* Ajusta la escala al pasar el mouse */
+    }
+}
+
+.parraf{
+    max-width: 45%;
+    padding: 15px; 
+    border: 1px solid #0a0a0a;
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.493);
+    margin-left: 200px;
+    transition: margin-right 0.3s ease;
+}
+.parraf:hover {
+    margin-left: 30px;
+    height: 400px;
+}

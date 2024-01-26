@@ -14,17 +14,12 @@ header {
   align-items: center;
   padding: 2rem 4rem;
 }
-@media (max-width: 688px) {
-  header header {
-    display: flex;
-    flex-direction: column;
-  }
-}
-header .menu {
+
+.menu {
   display: flex;
   gap: 1rem;
 }
-header .menu-item {
+.menu .menu-item {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.5rem;
@@ -32,25 +27,46 @@ header .menu-item {
   padding: 10px;
   transition: box-shadow 0.3s, transform 0.3s;
 }
-header .menu-item:hover {
+.menu .menu-item:hover {
   box-shadow: 0 0 20px rgb(243, 241, 241);
   transform: translateY(-5px);
-  color: #9c7500;
+  color: #0a100d;
   background: #519e8a;
 }
-header .logo-nav {
+
+.logo-nav {
   width: 8rem;
   border-radius: 1rem;
   box-shadow: 0px 15px 25px #ffffff;
 }
+
 @media (max-width: 1000px) {
-  header .menu {
+  header {
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+  }
+  .logo-nav {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 1rem;
   }
+  .menu-item {
+    width: 1200px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: background 0.3s;
+  }
+  .menu-item:hover {
+    background: #519e8a;
+    color: #0a100d;
+  }
 }
-
 .section {
   background-color: #519e8a;
   color: #ffffff;
@@ -172,8 +188,9 @@ header .logo-nav {
   box-shadow: 0 7px 8px 0px rgb(0, 0, 0);
   transition: 0.2s;
 }
-@media (max-width) {
+@media (max-width: 1300px) {
   .main-product .grid {
+    height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -383,4 +400,53 @@ footer .redS ul li .Twitter:hover {
 }
 footer .redS ul li .WhatSapp:hover {
   background: #25d366;
+}
+
+.contenedor3 {
+  background-image: url(..//../img/Bosque.jpg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.contenedor3-junior-titulo {
+  color: #155731;
+  font-size: 100px;
+  margin-bottom: 20px;
+  text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor3-junior-titulo-img-p {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  text-shadow: 6px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imagen-D {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #070707;
+  transition: transform 0.3s ease;
+}
+.imagen-D .imagen-D:hover {
+  transform: scale(1.1); /* Ajusta la escala al pasar el mouse */
+}
+
+.parraf {
+  max-width: 45%;
+  padding: 15px;
+  border: 1px solid #0a0a0a;
+  text-align: left;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.493);
+  margin-left: 200px;
+  transition: margin-right 0.3s ease;
+}
+
+.parraf:hover {
+  margin-left: 30px;
+  height: 400px;
 }/*# sourceMappingURL=main.css.map */
