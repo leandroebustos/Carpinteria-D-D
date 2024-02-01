@@ -1,7 +1,7 @@
 
 .section {
-    background-color: $colorverde1;
-    color: $colorblanco;
+    background: rgb(38,172,69);
+background: linear-gradient(0deg, rgba(38,172,69,1) 0%, rgba(38,172,69,1) 50%, rgba(36,166,65,1) 100%);
     display: flex;
     padding: 2rem; 
     gap: 2rem; 
@@ -24,7 +24,9 @@
     }
     .section-titulo {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+        margin-left: 8rem;
+        padding: 2rem;
     }
 
     .section-texto {
@@ -36,13 +38,16 @@
         box-shadow: 0 15px 20px $colorsombra;
         text-align: left;
         margin-top: 1rem;
+        margin-left: 8rem;
         font-size: 1.2rem;
     }
 
     .section-boton {
+        
         display: inline-block;
         margin-top: 3rem;
         margin-bottom: 3rem;
+        margin-left: 8rem;
         color: $colorblanco;
         border: 1px solid $colorblanco;
         padding: 0.5rem 1rem;
@@ -54,6 +59,7 @@
             transform: scale(1.5);
             transition: transform 0.3s ease-in; 
         }
+
     
 
     .section-img {
@@ -61,6 +67,8 @@
         border: 2px solid $colorblanco;
         border-radius: 1rem;
         box-shadow: 0 15px 25px $colorsombra;
+        animation: animate__bounceInDown; 
+        animation-duration:8s; 
 
         @media (max-width: 803px) {
             width: 100%;
@@ -71,7 +79,8 @@
 }
 
 .continer-pri {
-    background-color: $colorverde2;
+    background: rgb(38,172,69);
+background: linear-gradient(0deg, rgba(38,172,69,1) 0%, rgba(38,172,69,1) 50%, rgba(36,166,65,1) 100%);
     text-align: center;
 
     padding: 4rem;

@@ -3,7 +3,8 @@ footer {
     width: 100%;
     padding: 10px 0px;
     background-size: cover;
-    background-color: $colorfooter;
+    background: rgb(38,172,69);
+background: linear-gradient(184deg, rgba(38,172,69,1) 0%, rgba(16,73,29,1) 50%, rgba(1,6,2,1) 100%);
 
     .contenedorf {
         display: flex;

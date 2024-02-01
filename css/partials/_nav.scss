@@ -1,6 +1,7 @@
 
  header {
-    background-color: $colornegro;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,45,21,1) 50%, rgba(36,166,65,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,13 +36,15 @@
         width: 8rem;
         border-radius: 1rem;
         box-shadow: 0px 15px 25px $colorblanco;
+        
     }
    
     @media (max-width: 1000px) {
 
         header {
             flex-direction: column;
-            align-items: center; /* Center content horizontally */
+            align-items: center;
+            height: 100vh;
         }
         .logo-nav{
             text-align: center;
@@ -54,7 +57,7 @@
             font-size: 1rem; 
         }
         .menu-item {
-            width: 1200px; 
+           width:  100vh;
             text-align: center; 
             box-sizing: border-box; 
             padding: 10px;

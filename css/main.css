@@ -8,7 +8,8 @@
 }
 
 header {
-  background-color: #0a100d;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(14, 45, 21) 50%, rgb(36, 166, 65) 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +44,8 @@ header {
 @media (max-width: 1000px) {
   header {
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
+    height: 100vh;
   }
   .logo-nav {
     text-align: center;
@@ -56,7 +58,7 @@ header {
     font-size: 1rem;
   }
   .menu-item {
-    width: 1200px;
+    width: 100vh;
     text-align: center;
     box-sizing: border-box;
     padding: 10px;
@@ -68,8 +70,8 @@ header {
   }
 }
 .section {
-  background-color: #519e8a;
-  color: #ffffff;
+  background: rgb(38, 172, 69);
+  background: linear-gradient(0deg, rgb(38, 172, 69) 0%, rgb(38, 172, 69) 50%, rgb(36, 166, 65) 100%);
   display: flex;
   padding: 2rem;
   gap: 2rem;
@@ -92,7 +94,9 @@ header {
 }
 .section .section-titulo {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  margin-left: 8rem;
+  padding: 2rem;
 }
 .section .section-texto {
   max-width: 600px;
@@ -103,12 +107,14 @@ header {
   box-shadow: 0 15px 20px rgb(0, 0, 0);
   text-align: left;
   margin-top: 1rem;
+  margin-left: 8rem;
   font-size: 1.2rem;
 }
 .section .section-boton {
   display: inline-block;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  margin-left: 8rem;
   color: #ffffff;
   border: 1px solid #ffffff;
   padding: 0.5rem 1rem;
@@ -125,6 +131,8 @@ header {
   border: 2px solid #ffffff;
   border-radius: 1rem;
   box-shadow: 0 15px 25px rgb(0, 0, 0);
+  animation: animate__bounceInDown;
+  animation-duration: 8s;
 }
 @media (max-width: 803px) {
   .section .section-boton .section-img {
@@ -133,7 +141,8 @@ header {
 }
 
 .continer-pri {
-  background-color: rgb(126, 176, 155);
+  background: rgb(38, 172, 69);
+  background: linear-gradient(0deg, rgb(38, 172, 69) 0%, rgb(38, 172, 69) 50%, rgb(36, 166, 65) 100%);
   text-align: center;
   padding: 4rem;
 }
@@ -161,7 +170,8 @@ header {
 
 /* ---------------------------Imagenes Grid ------------------------------------------*/
 .main-product {
-  background-color: #519e8a;
+  background: rgb(38, 172, 69);
+  background: linear-gradient(0deg, rgb(38, 172, 69) 0%, rgb(38, 172, 69) 50%, rgb(36, 166, 65) 100%);
   display: flex;
   justify-content: center;
   padding: 1%;
@@ -171,13 +181,14 @@ header {
   height: 200vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 6rem;
   padding: 5rem;
   margin: 2rem;
   grid-template-areas: "foto1 foto2 foto3 foto4" "foto5 foto6 foto7 foto8" "foto9 foto10 foto11 foto12" "foto13 foto14 foto15 foto16";
 }
-.main-product .grid-hijo {
+.main-product .grid .grid-hijo {
   background-color: #d9d3d5;
   width: 100%;
   padding: 0.5rem;
@@ -186,9 +197,12 @@ header {
   justify-content: center;
   border: 3px solid #0a100d;
   box-shadow: 0 7px 8px 0px rgb(0, 0, 0);
-  transition: 0.2s;
 }
-@media (max-width: 1300px) {
+.main-product .grid .grid-hijo:hover {
+  transform: scale(1.1);
+  transition: 3s;
+}
+@media (max-width: 1500px) {
   .main-product .grid {
     height: 200vh;
     display: grid;
@@ -196,8 +210,24 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
+@media (max-width: 1200px) {
+  .main-product .grid {
+    height: 300vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" " foto7 foto8 foto9" " foto10 foto11 foto12" "foto13 foto14 foto15" "foto16";
+  }
+}
 
 /* Cards de productos */
+section {
+  background: rgb(38, 172, 69);
+  background: linear-gradient(184deg, rgb(38, 172, 69) 0%, rgb(38, 172, 69) 50%, rgb(38, 172, 69) 100%);
+  text-align: center;
+  font-size: 2rem;
+}
+
 .card {
   background-color: #d9d3d5;
   width: 100%;
@@ -214,11 +244,6 @@ header {
 .card .main-product {
   background-color: rgb(126, 176, 155);
   padding: 3rem;
-}
-.card .main-tit {
-  background-color: #519e8a;
-  text-align: center;
-  font-size: 2rem;
 }
 .card .contenedor3 {
   background-color: #519e8a;
@@ -302,7 +327,8 @@ footer {
   width: 100%;
   padding: 10px 0px;
   background-size: cover;
-  background-color: #d9d3d5;
+  background: rgb(38, 172, 69);
+  background: linear-gradient(184deg, rgb(38, 172, 69) 0%, rgb(16, 73, 29) 50%, rgb(1, 6, 2) 100%);
 }
 footer .contenedorf {
   display: flex;
@@ -422,19 +448,19 @@ footer .redS ul li .WhatSapp:hover {
   width: 100%;
   max-width: 800px;
   text-shadow: 6px 8px 10px rgba(0, 0, 0, 0.5);
+  margin-left: 8rem;
+}
+.contenedor3-junior-titulo-img-p:hover {
+  transform: scale(1.5);
+  transition: 5s;
 }
 
-.imagen-D {
+.imagen-d {
   max-width: 45%;
   height: auto;
   border-radius: 10px;
   border: 2px solid #070707;
-  transition: transform 0.3s ease;
 }
-.imagen-D .imagen-D:hover {
-  transform: scale(1.1); /* Ajusta la escala al pasar el mouse */
-}
-
 .parraf {
   max-width: 45%;
   padding: 15px;
@@ -443,10 +469,9 @@ footer .redS ul li .WhatSapp:hover {
   color: white;
   background-color: rgba(0, 0, 0, 0.493);
   margin-left: 200px;
-  transition: margin-right 0.3s ease;
 }
 
 .parraf:hover {
-  margin-left: 30px;
-  height: 400px;
+  transform: scale(1.5);
+  transition: 5s;
 }/*# sourceMappingURL=main.css.map */

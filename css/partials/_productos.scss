@@ -1,5 +1,11 @@
 /* Cards de productos */
 
+section{
+    background: rgb(38,172,69);
+    background: linear-gradient(184deg, rgba(38,172,69,1) 0%, rgba(38,172,69,1) 50%, rgba(38,172,69,1) 100%);
+    text-align: center;
+    font-size: 2rem;
+}
 .card {
     background-color: $colorfooter;
     width: 100%;
@@ -16,12 +22,6 @@
         background-color: $colorverde2;
         padding: 3rem;
     
-    }
-    
-    .main-tit {
-        background-color: $colorverde1;
-        text-align: center;
-        font-size: 2rem;
     }
     
     /* quienSoy */
