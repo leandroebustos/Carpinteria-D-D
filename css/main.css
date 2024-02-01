@@ -123,8 +123,8 @@ header {
   animation: zoomIn 0.3s ease-out;
 }
 .section .section-boton:hover {
-  transform: scale(1.5);
-  transition: transform 0.3s ease-in;
+  transform: scale(1.1);
+  transition: 5s;
 }
 .section .section-boton .section-img {
   width: 100%;
@@ -451,7 +451,7 @@ footer .redS ul li .WhatSapp:hover {
   margin-left: 8rem;
 }
 .contenedor3-junior-titulo-img-p:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 5s;
 }
 
@@ -461,6 +461,7 @@ footer .redS ul li .WhatSapp:hover {
   border-radius: 10px;
   border: 2px solid #070707;
 }
+
 .parraf {
   max-width: 45%;
   padding: 15px;
