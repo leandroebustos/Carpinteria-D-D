@@ -69,7 +69,7 @@ header {
     color: #0a100d;
   }
 }
-.section {
+main .section {
   background: rgb(38, 172, 69);
   background: linear-gradient(0deg, rgb(38, 172, 69) 0%, rgb(38, 172, 69) 50%, rgb(36, 166, 65) 100%);
   display: flex;
@@ -78,27 +78,35 @@ header {
   align-items: flex-start;
 }
 @media (max-width: 1239px) {
-  .section {
+  main .section {
     flex-direction: column;
   }
 }
-.section .section-izq {
+main .section .section-izq {
   order: 1;
   margin-right: 1rem;
 }
-.section .section-der {
+main .section .section-der {
   order: 2;
   margin-left: auto;
   align-self: flex-start;
   margin-right: 1rem;
 }
-.section .section-titulo {
+main .section .section-titulo {
   font-size: 2rem;
   margin-bottom: 4rem;
   margin-left: 8rem;
   padding: 2rem;
 }
-.section .section-texto {
+@media (max-width: 375px) {
+  main .section .section-titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 1rem;
+  }
+}
+main .section .section-texto {
   max-width: 600px;
   background-color: rgba(29, 39, 46, 0.32);
   border: 2px solid #0a100d;
@@ -110,7 +118,15 @@ header {
   margin-left: 8rem;
   font-size: 1.2rem;
 }
-.section .section-boton {
+@media (max-width: 375px) {
+  main .section .section-texto {
+    max-width: 300px;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: auto;
+  }
+}
+main .section .section-boton {
   display: inline-block;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -122,11 +138,11 @@ header {
   box-shadow: 0 15px 25px rgb(0, 0, 0);
   animation: zoomIn 0.3s ease-out;
 }
-.section .section-boton:hover {
+main .section .section-boton:hover {
   transform: scale(1.1);
   transition: 5s;
 }
-.section .section-boton .section-img {
+main .section .section-img {
   width: 100%;
   border: 2px solid #ffffff;
   border-radius: 1rem;
@@ -135,35 +151,34 @@ header {
   animation-duration: 8s;
 }
 @media (max-width: 803px) {
-  .section .section-boton .section-img {
+  main .section .section-img {
     width: 100%;
   }
 }
-
-.continer-pri {
+main .continer-pri {
   background: rgb(38, 172, 69);
   background: linear-gradient(0deg, rgb(38, 172, 69) 0%, rgb(38, 172, 69) 50%, rgb(36, 166, 65) 100%);
   text-align: center;
   padding: 4rem;
 }
-.continer-pri .carrusel-p {
+main .continer-pri .carrusel-p {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.continer-pri #carouselExampleCaptions {
+main .continer-pri #carouselExampleCaptions {
   width: 40rem;
   border: 2px solid #ffffff;
   border-radius: 1rem;
   box-shadow: 0px 15px 25px rgb(0, 0, 0);
 }
-.continer-pri #carouselExampleCaptions .carousel-item img {
+main .continer-pri #carouselExampleCaptions .carousel-item img {
   width: auto;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.continer-pri #carouselExampleCaptions .carousel-caption > h5, .continer-pri #carouselExampleCaptions .carousel-caption > p {
+main .continer-pri #carouselExampleCaptions .carousel-caption > h5, main .continer-pri #carouselExampleCaptions .carousel-caption > p {
   color: black;
   background-color: rgba(78, 77, 77, 0.486);
 }
@@ -204,19 +219,26 @@ header {
 }
 @media (max-width: 1500px) {
   .main-product .grid {
-    height: 200vh;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 @media (max-width: 1200px) {
   .main-product .grid {
-    height: 300vh;
+    height: 120vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" " foto7 foto8 foto9" " foto10 foto11 foto12" "foto13 foto14 foto15" "foto16";
+    gap: 3rem;
+    padding: 2.5rem;
+    margin: 1rem;
+  }
+}
+@media (max-width: 1050px) {
+  .main-product .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9" "foto10 foto11 foto12" "foto13 foto14 foto15" "foto16";
   }
 }
 

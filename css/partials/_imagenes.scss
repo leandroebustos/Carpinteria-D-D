@@ -15,8 +15,7 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr ;
         grid-template-columns: repeat(auto-fit,
-                minmax(300px,
-                    1fr));
+                minmax(300px,1fr));
         gap: 6rem;
         padding: 5rem;
         margin: 2rem;
@@ -48,30 +47,43 @@
     
     @media (max-width: 1500px) {
         .grid {
-            height: 200vh;
+            height: auto;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
             grid-template-columns: repeat(auto-fit,
             minmax(200px, 1fr)); 
             
         }
         
     }
-    @media (max-width: 1200px){
+    @media (max-width: 1200px) {
         .grid {
-            height: 300vh;
+            height: 120vh;
             display: grid;
-            grid-template-columns:  repeat( 3, 1fr) ;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding: 2.5rem;
+            margin: 1rem; 
+        }
+            
+        }
+    @media (max-width: 1050px) {
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: repeat(6, 1fr)   ;
             grid-template-areas:
             "foto1 foto2 foto3"
             "foto4 foto5 foto6"
-            " foto7 foto8 foto9"
-            " foto10 foto11 foto12"
+            "foto7 foto8 foto9"
+            "foto10 foto11 foto12"
             "foto13 foto14 foto15"
-            "foto16";
+            "foto16";  
+            
         }
+
     }
     
+        
     }
+    
+    
 
