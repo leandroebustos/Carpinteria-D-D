@@ -1,15 +1,15 @@
 
- header {
+.navbar {
     background: rgb(0,0,0);
 background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,45,21,1) 50%, rgba(36,166,65,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 1rem 2rem;
 
    
     }
-    .menu {
+    .container-fluid {
         display: flex;
         gap: 1rem;
         
@@ -32,39 +32,9 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,45,21,1) 50%, rgba
 }
 
 
-    .logo-nav {
+    .navbar-brand {
         width: 8rem;
         border-radius: 1rem;
         box-shadow: 0px 15px 25px $colorblanco;
         
-    }
-   
-    @media (max-width: 1000px) {
-
-        header {
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-        }
-        .logo-nav{
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        .menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1rem; 
-        }
-        .menu-item {
-           width:  100vh;
-            text-align: center; 
-            box-sizing: border-box; 
-            padding: 10px;
-            transition: background 0.3s;
-            &:hover {
-                background: $colorverde1;
-                color: $colornegro;
-            }
-        }
     }
